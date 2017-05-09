@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="eaindicator">
+        <attr name="item_size" format="dimension" />
+
+        <attr name="ic_margin" format="dimension" />
+        <attr name="ic_current_margin" format="dimension" />
+
+        <attr name="ic_src" format="integer" />
+        <attr name="ic_current_src" format="integer" />
+
+    </declare-styleable>
+
+</resources>

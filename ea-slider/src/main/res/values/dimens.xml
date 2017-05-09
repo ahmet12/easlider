@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="eai_item_size">16dp</dimen>
+
+    <dimen name="eai_ic_margin">2dp</dimen>
+    <dimen name="eai_ic_current_margin">0dp</dimen>
+</resources>
