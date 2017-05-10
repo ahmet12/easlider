@@ -75,18 +75,22 @@ public class SlideFragment extends Fragment {
         Callback callback = new Callback() {
             @Override
             public void onSuccess() {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-                    progressView.animate().alpha(0.0f).setDuration(500).start();
-                } else
-                    progressView.setVisibility(View.GONE);
+                if (progressView != null) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+                        progressView.animate().alpha(0.0f).setDuration(500).start();
+                    } else
+                        progressView.setVisibility(View.GONE);
+                }
             }
 
             @Override
             public void onError() {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-                    progressView.animate().alpha(0.0f).setDuration(500).start();
-                } else
-                    progressView.setVisibility(View.GONE);
+                if (progressView != null) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+                        progressView.animate().alpha(0.0f).setDuration(500).start();
+                    } else
+                        progressView.setVisibility(View.GONE);
+                }
                 showImageError(inflater, view);
             }
         };
