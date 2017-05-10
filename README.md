@@ -6,6 +6,8 @@ An image slider for android.
 compile 'com.ahmetkilic.ahmetslider:ea-slider:1.0.1'
 ```
 
+![](https://github.com/ahmet12/easlider/blob/master/slide_gif.gif)
+
 ### Usage
 ```java
 
